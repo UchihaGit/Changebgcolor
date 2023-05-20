@@ -1,0 +1,53 @@
+<!--<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button> Click me</button>
+  <script>
+
+      var clr = ["#ff41ef", "#59e96a","#a28a65","#9c5283","#4fddd4","#1b47ad"];
+      var i = 0;
+      document.querySelector("button").addEventListener("click",
+      function(){
+        i = i < clr.length ? ++i : 0;
+        document.querySelector("body").style.background = clr[i];
+      })
+
+  </script>
+</body>
+
+
+</html>  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <button onclick="colorChange()"> Click me </button>
+  <script>
+
+      var clr = ["#ff41ef", "#59e96a","#a28a65","#9c5283","#4fddd4","#1b47ad"];
+      var i = 0;
+     function colorChange(){
+        i = i < clr.length-1 ? ++i : 0;
+        console.log(clr[i]);
+        document.body.style.background = clr[i];
+      };
+
+  </script>
+</body>
+
+
+</html>
